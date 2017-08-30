@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> fixit - A platform that connects people to  </title>
+    <meta charset="utf-8">
+    <!-- Mobile viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- Form styleshets -->
+    <link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+    <link rel="stylesheet" type="text/css" href="css/smart-themes/blue.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Placeholder support in IE9 and below -->
+    <!--[if lte IE 9]>
+    	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+
+    <!-- IE8 Fallback styling -->
+    <!--[if lte IE 8]>
+        <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
+    <![endif]-->
+</head>
+
+<body>
+  <div class="breif">
+    <div class="logo"></div>
+    <p class="lead-32 text-center color-white margin-t40 open-sans">
+      A platform that connects people <br/> with skilled repairs workers.
+    </p>
+  </div>
+  <div class="app-preview"></div>
+  <div class="smart-wrap text-center">
+      <div class="smart-forms smart-container wrap-3">
+          <div class="form-header header-blue">
+              <h4>Want to know more?</h4>
+          </div><!-- end .form-header section -->
+            <form method="post" action="/" id="contactForm">
+              <div class="form-body theme-blue">
+
+                  <div class="spacer-b20">
+                    <div class="tagline">
+                      <span> Sign up now  </span>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <p class="small-text fine-grey">To be from firsts to get a FREE trial! </p>
+                  </div>
+                  <div class="section">
+                      <!-- <label for="names" class="field-label">Your Personal Name</label> -->
+                      <label class="field prepend-icon">
+                          <input type="text" name="names" id="names" class="gui-input required" placeholder="Enter name...">
+                            <span class="field-icon"><i class="fa fa-user"></i></span>
+                        </label>
+                    </div><!-- end section -->
+
+                  <div class="section">
+                      <!-- <label for="email" class="field-label">Your Email Address</label> -->
+                      <label class="field prepend-icon">
+                          <input type="email" name="email" id="email" class="gui-input required" placeholder="example@domain.com...">
+                            <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                        </label>
+                    </div><!-- end section -->
+
+                    <div class="section">
+                      <!-- <label for="telephone" class="field-label">Telephone / Mobile </label> -->
+                      <label class="field prepend-icon">
+                          <input type="tel" name="telephone" id="telephone" class="gui-input" placeholder="Enter telephone or mobile...">
+                            <span class="field-icon"><i class="fa fa-phone-square"></i></span>
+                        </label>
+                    </div><!-- end section -->
+
+                    <div class="spacer-t40 spacer-b20">
+                      <div class="tagline">
+                        <span> Interested?  </span>
+                      </div>
+                    </div>
+                    <div class="section">
+                      <p class="small-text fine-grey">Choose a type you are interested more about. </p>
+                    </div>
+                    <div class="section">
+                      <div class="option-group field">
+                        <label class="option">
+                          <input name="type" checked="" type="radio">
+                          <span class="radio"></span>
+                          Worker
+                        </label>
+                        <label class="option">
+                          <input name="type" type="radio">
+                          <span class="radio"></span>
+                          Client
+                        </label>
+                      </div>
+                    </div>
+
+                </div><!-- end .form-body section -->
+                <div class="form-footer">
+                  <button type="submit" class="button pushed expand block btn-blue">Subscribe Now!</button>
+                </div><!-- end .form-footer section -->
+            </form>
+
+        </div><!-- end .smart-forms section -->
+    </div><!-- end .smart-wrap section -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript">
+        $(function() {
+           $('#contactForm').validate({
+              errorClass: "state-error",
+              validClass: "state-success",
+              errorElement: "em",
+
+              rules: {
+                  names: {
+                      required: true
+                  },
+                  email: {
+                      required: true,
+                      email: true
+                  }
+              }, // end rules
+              messages: {
+                  names: {
+                      required: 'Enter your name'
+                  },
+                  email: {
+                      required: 'Enter your email address',
+                      email: 'Enter a VALID email address'
+                  }
+              }, // end messages
+
+              highlight: function(element, errorClass, validClass) {
+                  $(element).closest('.field').addClass(errorClass).removeClass(validClass);
+              }, // end highlight
+
+              unhighlight: function(element, errorClass, validClass) {
+                  $(element).closest('.field').removeClass(errorClass).addClass(validClass);
+              }, // end unhighlight
+
+              errorPlacement: function(error, element) {
+                  if (element.is(":radio") || element.is(":checkbox")) {
+                      element.closest('.option-group').after(error);
+                  } else {
+                      error.insertAfter(element.parent());
+                  }
+              } // end error placement
+           });
+        });
+    </script>
+</body>
+</html>

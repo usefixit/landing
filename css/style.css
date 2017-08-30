@@ -1,0 +1,162 @@
+h1, h2, h3, h4, h5, h6, .open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background: #b2dfdc;
+}
+.breif {
+  background: url("../images/header-bg.jpg") top center no-repeat;
+  height: auto;
+  width: 100%;
+  padding-top: 197px;
+  padding-bottom: 200px;
+}
+.breif2 {
+  background: url("../images/fixit-illustration.jpg") top center no-repeat;
+  height: 686px;
+  width: 100%;
+  padding-top: 197px;
+  padding-bottom: 200px;
+}
+.app-preview {
+  background: url("../images/app-preview.png") top center no-repeat;
+  width: 924px;
+  height: 911px;
+  margin: -80px auto 0;
+}
+.breif .logo {
+  background: url("../images/fixit-logo.png") no-repeat;
+  height: 141px;
+  width: 300px;
+  margin: 0 auto;
+}
+.lead-18 {
+  font-size: 18px;
+}
+.lead-24 {
+  font-size: 24px;
+}
+.lead-32 {
+  font-size: 32px;
+}
+.color-white {
+  color: white;
+}
+.margin-t20 {
+  margin-top:20px;
+}
+.margin-t40 {
+  margin-top:40px;
+}
+.margin-b40 {
+  margin-bottom: 40px;
+}
+.smart-forms .form-footer .button {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.smart-forms .form-header h4 {
+  text-align: center;
+}
+
+
+        /* @validaion - error state
+        ------------------------------------- */
+        .smart-forms .state-error .gui-input,
+        .smart-forms .state-error .gui-textarea,
+        .smart-forms .state-error.select > select,
+        .smart-forms .state-error.select-multiple > select,
+        .smart-forms .state-error input:hover + .checkbox,
+        .smart-forms .state-error input:hover + .radio,
+        .smart-forms .state-error input:focus + .checkbox,
+        .smart-forms .state-error input:focus + .radio,
+        .smart-forms .state-error .checkbox,
+        .smart-forms .state-error .radio{
+            background:#FEE9EA;
+            border-color:#DE888A;
+        }
+
+        .smart-forms .state-error .gui-input:focus,
+        .smart-forms .state-error .gui-textarea:focus,
+        .smart-forms .state-error.select > select:focus,
+        .smart-forms .state-error.select-multiple > select:focus{
+            -webkit-box-shadow:0px 0px 3px #DE888A inset;
+            -moz-box-shadow:0px 0px 3px #DE888A inset;
+            -o-box-shadow:0px 0px 3px #DE888A inset;
+            box-shadow:0px 0px 3px #DE888A inset;
+        }
+
+        .smart-forms .state-error .gui-input ~ .field-icon i,
+        .smart-forms .state-error .gui-textarea ~ .field-icon i{  color: #DE888A; }
+        .smart-forms .state-error.select .arrow { color: #DE888A; }
+        .smart-forms .state-error.select > select:focus + .arrow{ color:#DE888A; }
+        .smart-forms .state-error .gui-input ~ .input-hint,
+        .smart-forms .state-error.file .gui-file:hover + .gui-input,
+        .smart-forms .state-error .gui-textarea ~ .input-hint { border-color:#DE888A; }
+        .smart-forms .state-error + em{
+            display: block!important;
+            margin-top: 6px;
+            padding: 0 3px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: normal;
+            line-height: normal;
+            font-size:0.85em;
+            color:#DE888A;
+        }
+
+        /* @validaion - success state
+        -------------------------------------------------- */
+        .smart-forms .state-success .gui-input,
+        .smart-forms .state-success .gui-textarea,
+        .smart-forms .state-success.select > select,
+        .smart-forms .state-success.select-multiple > select,
+        .smart-forms .state-success input:hover + .checkbox,
+        .smart-forms .state-success input:hover + .radio,
+        .smart-forms .state-success input:focus + .checkbox,
+        .smart-forms .state-success input:focus + .radio,
+        .smart-forms .state-success .checkbox,
+        .smart-forms .state-success .radio{
+            background:#F0FEE9;
+            border-color:#A5D491;
+        }
+
+        .smart-forms .state-success .gui-input:focus,
+        .smart-forms .state-success .gui-textarea:focus,
+        .smart-forms .state-success.select > select:focus,
+        .smart-forms .state-success.select-multiple > select:focus{
+            -webkit-box-shadow:0px 0px 3px #A5D491 inset;
+            -moz-box-shadow:0px 0px 3px #A5D491 inset;
+            -o-box-shadow:0px 0px 3px #A5D491 inset;
+            box-shadow:0px 0px 3px #A5D491 inset;
+        }
+
+        .smart-forms .state-success .gui-input ~ .field-icon i,
+        .smart-forms .state-success .gui-textarea ~ .field-icon i{  color: #A5D491; }
+        .smart-forms .state-success.select .arrow { color: #A5D491; }
+        .smart-forms .state-success.select > select:focus + .arrow{ color:#A5D491; }
+        .smart-forms .state-success.select:before {  border-left:1px solid #A5D491; }
+        .smart-forms .state-success .gui-input ~ .input-hint,
+        .smart-forms .state-success.file .gui-file:hover + .gui-input,
+        .smart-forms .state-success .gui-textarea ~ .input-hint { border-color:#A5D491; }
+.illustration {
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media screen and (min-width: 990px) {
+  .display-table {
+    display: table;
+    table-layout: fixed;
+  }
+  .vertical-align {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    float: none;
+  }
+}
+
+
