@@ -27,6 +27,7 @@ $(document).ready(function () {
        
         $.post( "https://onfixit.herokuapp.com/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
             $('.alert-success').show();
+            $('contactForm').hide();
             $('.pushed').attr("disabled",'disabled');
             
                 } ,'json' );
