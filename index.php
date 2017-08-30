@@ -77,15 +77,16 @@
                               <span class="field-icon"><i class="fa fa-envelope"></i></span>
                           </label>
                       </div><!-- end section -->
-                      <div class="section">
-                          <div class="notification alert-success spacer-t10" style="display:none">
-                             <p>Thank you! You are in.</p>
-                            </div>
-                      </div>
+                      
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
                   <button type="submit" class="button pushed expand block btn-blue">Start fixing now!</button>
                 </div><!-- end .form-footer section -->
+                <div class="section">
+                          <div class="notification alert-success spacer-t10" style="display:none">
+                             <p>Thank you! You are in.</p>
+                            </div>
+                      </div>
             </form>
        
         </div><!-- end .smart-forms section -->
