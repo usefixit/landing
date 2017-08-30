@@ -86,7 +86,7 @@
             </form>
         <div class="section">
                           <div class="notification alert-success spacer-t10" style="display:none">
-                             <p>Thank you! You are in.</p>
+                             <p>Thank you! Your record has been registered successfully</p>
                             </div>
                       </div>
         </div><!-- end .smart-forms section -->
