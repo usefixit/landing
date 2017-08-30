@@ -25,7 +25,7 @@ $(document).ready(function () {
         postDataToExcel.email = $('#email').val();
         postDataToExcel.type = $('input[name="type[]"]:checked').val();
        
-        $.post( "http://localhost/fixlanding/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
+        $.post( "https://createorderfixitapp.herokuapp.com/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
             
                 } ,'json' );
             }else{
