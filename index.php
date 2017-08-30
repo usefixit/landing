@@ -82,8 +82,12 @@
                   <button type="submit" class="button pushed expand block btn-blue">Start fixing now!</button>
                 </div><!-- end .form-footer section -->
             </form>
-
+       
         </div><!-- end .smart-forms section -->
+         <div class="notification alert-success spacer-t10" style="display:none">
+        <p>Thank you! You are in.</p>
+        <a class="close-btn" href="#">×</a>
+        </div>
     </div><!-- end .smart-wrap section -->
 </body>
 </html>
