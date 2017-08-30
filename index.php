@@ -51,10 +51,7 @@
       <div class="smart-forms smart-container wrap-3">
             <form method="post"  id="contactForm">
               <div class="form-body theme-blue">
-                   <div class="notification alert-success spacer-t10" style="display:none">
-                    <p>Thank you! You are in.</p>
-                    <a class="close-btn" href="#">×</a>
-                    </div>
+                   
                     <div class="spacer-b20">
                       <div class="tagline">
                         <span> What is your interest?  </span>
@@ -80,7 +77,12 @@
                               <span class="field-icon"><i class="fa fa-envelope"></i></span>
                           </label>
                       </div><!-- end section -->
-
+                      <div class="section">
+                          <div class="notification alert-success spacer-t10" style="display:none">
+                             <p>Thank you! You are in.</p>
+                             <a class="close-btn" href="#">×</a>
+                            </div>
+                      </div>
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
                   <button type="submit" class="button pushed expand block btn-blue">Start fixing now!</button>
