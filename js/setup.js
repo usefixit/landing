@@ -25,7 +25,7 @@ $(document).ready(function () {
         postDataToExcel.email = $('#email').val();
         postDataToExcel.type = $('input[name="type[]"]:checked').val();
        
-        $.post( "https://createorderfixitapp.herokuapp.com/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
+        $.post( "https://onfixit.herokuapp.com/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
             $('.alert-success').show();
             $('.pushed').attr("disabled",'disabled');
             

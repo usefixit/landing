@@ -80,7 +80,6 @@
                       <div class="section">
                           <div class="notification alert-success spacer-t10" style="display:none">
                              <p>Thank you! You are in.</p>
-                             <a class="close-btn" href="#">×</a>
                             </div>
                       </div>
                 </div><!-- end .form-body section -->
