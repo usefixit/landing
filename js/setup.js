@@ -26,8 +26,8 @@ $(document).ready(function () {
         postDataToExcel.type = $('input[name="type[]"]:checked').val();
        
         $.post( "https://createorderfixitapp.herokuapp.com/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
-            $('.smart-forms').hide();
             $('.alert-success').show();
+            $('.pushed').attr("disabled",'disabled');
             
                 } ,'json' );
             }else{
