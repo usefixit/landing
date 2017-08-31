@@ -17,18 +17,22 @@ $(document).ready(function () {
    });
     
     $('#contactForm').on("submit",function(e){
-                    e.preventDefault();
-
-            if($("#contactForm").valid()){
-        var postDataToExcel = new Object();
+           e.preventDefault();
+           
+        if($("#contactForm").valid()){
         
-        postDataToExcel.email = $('#email').val();
-        postDataToExcel.type = $('input[name="type[]"]:checked').val();
+            var postDataToExcel = new Object();
+            
+            $('#loader').show();
+            $('.pushed').attr("disabled",'disabled');
+            postDataToExcel.email = $('#email').val();
+            postDataToExcel.type = $('input[name="type[]"]:checked').val();
        
         $.post( "http://usefixit.azurewebsites.net/storeEmail.php" , JSON.stringify(postDataToExcel), function (data) {
             $('.alert-success').show();
             $('#contactForm').hide();
-            $('.pushed').attr("disabled",'disabled');
+            $('#loader').hide();
+            
             
                 } ,'json' );
             }else{

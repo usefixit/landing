@@ -49,9 +49,10 @@
 
   <div class="smart-wrap text-center">
       <div class="smart-forms smart-container wrap-3">
+          <img src="images/loader.gif" id="loader" style="margin:10px;display:none "/>
             <form method="post"  id="contactForm">
               <div class="form-body theme-blue">
-                   
+                 
                     <div class="spacer-b20">
                       <div class="tagline">
                         <span> What is your interest?  </span>
@@ -60,15 +61,15 @@
                     <div class="section">
                       <div class="option-group field">
                         <label class="option">
-                            <input name="type[]"  checked="" value="I can fix it" type="radio">
+                          <input name="type[]" type="radio" value="I am a client">
                           <span class="radio"></span>
-                          I can fix it
+                          I am a client
                         </label>
                         <label class="option">
-                          <input name="type[]" type="radio" value="I need it to be fixed">
+                            <input name="type[]"  checked="" value="I am a handy man " type="radio">
                           <span class="radio"></span>
-                          I need it to be fixed
-                        </label>
+                          I am a handy man 
+                        </label>  
                       </div>
                     </div>
                     <div class="section">
@@ -80,13 +81,13 @@
                       
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
-                  <button type="submit" class="button pushed expand block btn-blue">Start fixing now!</button>
+                  <button type="submit" class="button pushed expand block btn-blue">Let me know when lunched!</button>
                 </div><!-- end .form-footer section -->
                
             </form>
         <div class="section">
                           <div class="notification alert-success spacer-t10" style="display:none">
-                             <p>Thank you! Your record has been registered successfully</p>
+                             <p>Thank you! we will keep you updated</p>
                             </div>
                       </div>
         </div><!-- end .smart-forms section -->
