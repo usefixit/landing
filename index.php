@@ -61,12 +61,12 @@
                     <div class="section">
                       <div class="option-group field">
                         <label class="option">
-                          <input name="type[]" type="radio" value="I am a client">
+                          <input name="type[]" checked="" type="radio" value="I am a client">
                           <span class="radio"></span>
                           I am a client
                         </label>
                         <label class="option">
-                            <input name="type[]"  checked="" value="I am a handy man " type="radio">
+                            <input name="type[]"   value="I am a handy man " type="radio">
                           <span class="radio"></span>
                           I am a handy man 
                         </label>  
