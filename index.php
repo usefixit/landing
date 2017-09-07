@@ -81,7 +81,7 @@
                       
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
-                  <button type="submit" class="button pushed expand block btn-blue">Let me know when lunched!</button>
+                  <button type="submit" class="button pushed expand block btn-blue">Let me know when launched!</button>
                 </div><!-- end .form-footer section -->
                
             </form>
